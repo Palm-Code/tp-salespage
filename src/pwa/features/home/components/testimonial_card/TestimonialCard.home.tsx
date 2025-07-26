@@ -59,6 +59,7 @@ export const TestimonialCardHome = ({
       >
         <img
           src={reviewerPhoto}
+          alt={reviewerName}
           className={clsx("w-[50px] h-[50px]", "rounded-full")}
           width={50}
           height={50}

@@ -107,5 +107,39 @@
         "reviewer_photo": ""
       }
     ]
+  },
+  "plan_pricing": {
+    "items": [
+      {
+        "id": "1",
+        "description": "plan_pricing:item_1"
+      },
+      {
+        "id": "2",
+        "description": "plan_pricing:item_2"
+      },
+      {
+        "id": "3",
+        "description": "plan_pricing:item_3"
+      },
+      {
+        "id": "4",
+        "description": "plan_pricing:item_4"
+      }
+    ],
+    "footer": [
+      {
+        "id": "1",
+        "description": "plan_pricing:footer_item_1"
+      },
+      {
+        "id": "2",
+        "description": "plan_pricing:footer_item_2"
+      },
+      {
+        "id": "3",
+        "description": "plan_pricing:footer_item_3"
+      }
+    ]
   }
 }
