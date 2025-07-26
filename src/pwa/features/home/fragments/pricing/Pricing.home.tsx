@@ -253,10 +253,11 @@ export const PricingHome = () => {
                 "w-full"
               )}
             >
-              {footerItems.map((item) => {
+              {footerItems.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
+                    key={index}
                     className={clsx(
                       "grid grid-flow-col items-center content-center justify-center justify-items-center gap-[0.5rem]",
                       "w-full"
