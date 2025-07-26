@@ -6,12 +6,12 @@ hero,description,Your own AI-powered front desk assistant that responds instantl
 hero,cta,Get 50% Off Launch Deal
 problem,label,The Problem
 problem,title,Why It Matters
-problem,1_title,100+ DMs Daily
-problem,1_description,Drowning in Instagram messages while trying to focus on your art
-problem,2_title,Missed Bookings
-problem,2_description,Lost clients because you couldn't reply fast enough
-problem,3_title,Burnout Mode
-problem,3_description,Answering the same pricing questions over and over
+problem,item_1_title,100+ DMs Daily
+problem,item_1_description,Drowning in Instagram messages while trying to focus on your art
+problem,item_2_title,Missed Bookings
+problem,item_2_description,Lost clients because you couldn't reply fast enough
+problem,item_3_title,Burnout Mode
+problem,item_3_description,Answering the same pricing questions over and over
 how_it_works,label,How It Works
 how_it_works,title,Meet Your New AI Assistant
 how_it_works,description,Tiny Parrot is your intelligent front desk that never sleeps. It handles all your client communication across Instagram and WhatsApp.
@@ -63,8 +63,8 @@ faq,item_2_title,Do I need to install anything?
 faq,item_2_description,Yes' you’ll need to create an account on our website and then download the Tiny Parrot app from the App Store or Google Play. Once installed' you can connect your accounts through our simple dashboard and start right away.
 faq,item_3_title,Is it secure?
 faq,item_3_description,Yes! We use bank-level encryption and never store sensitive client information. Your data is completely private and secure.
-faq,item_2_title,Can I cancel anytime?
-faq,item_2_description,Of course! Cancel with just one click from your dashboard. No contracts' no hassles' no questions asked.
+faq,item_4_title,Can I cancel anytime?
+faq,item_4_description,Of course! Cancel with just one click from your dashboard. No contracts' no hassles' no questions asked.
 get_your_time_back,label,47 spots remaining at launch price
 get_your_time_back,title,Ready to Get Your Time Back?
 get_your_time_back,description,Join 150+ tattoo artists who've already transformed their business with Tiny Parrot.

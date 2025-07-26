@@ -16,12 +16,12 @@ export interface Resources {
   problem: {
     label: "The Problem"
     title: "Why It Matters"
-    1_title: "100+ DMs Daily"
-    1_description: "Drowning in Instagram messages while trying to focus on your art"
-    2_title: "Missed Bookings"
-    2_description: "Lost clients because you couldn't reply fast enough"
-    3_title: "Burnout Mode"
-    3_description: "Answering the same pricing questions over and over"
+    item_1_title: "100+ DMs Daily"
+    item_1_description: "Drowning in Instagram messages while trying to focus on your art"
+    item_2_title: "Missed Bookings"
+    item_2_description: "Lost clients because you couldn't reply fast enough"
+    item_3_title: "Burnout Mode"
+    item_3_description: "Answering the same pricing questions over and over"
   }
   how_it_works: {
     label: "How It Works"
@@ -81,10 +81,12 @@ export interface Resources {
     title: "Frequently Asked Questions"
     item_1_title: "Will it sound like me?"
     item_1_description: "Absolutely! Tiny Parrot learns your communication style' vocabulary' and personality. You can customize the tone to match exactly how you speak to clients."
-    item_2_title: "Can I cancel anytime?"
-    item_2_description: "Of course! Cancel with just one click from your dashboard. No contracts' no hassles' no questions asked."
+    item_2_title: "Do I need to install anything?"
+    item_2_description: "Yes' you’ll need to create an account on our website and then download the Tiny Parrot app from the App Store or Google Play. Once installed' you can connect your accounts through our simple dashboard and start right away."
     item_3_title: "Is it secure?"
     item_3_description: "Yes! We use bank-level encryption and never store sensitive client information. Your data is completely private and secure."
+    item_4_title: "Can I cancel anytime?"
+    item_4_description: "Of course! Cancel with just one click from your dashboard. No contracts' no hassles' no questions asked."
   }
   get_your_time_back: {
     label: "47 spots remaining at launch price"

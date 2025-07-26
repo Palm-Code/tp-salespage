@@ -3,18 +3,18 @@
     "items": [
       {
         "id": "1",
-        "title": "problem:1_title",
-        "description": "problem:1_description"
+        "title": "problem:item_1_title",
+        "description": "problem:item_1_description"
       },
       {
         "id": "2",
-        "title": "problem:2_title",
-        "description": "problem:2_description"
+        "title": "problem:item_2_title",
+        "description": "problem:item_2_description"
       },
       {
         "id": "3",
-        "title": "problem:3_title",
-        "description": "problem:3_description"
+        "title": "problem:item_3_title",
+        "description": "problem:item_3_description"
       }
     ]
   },

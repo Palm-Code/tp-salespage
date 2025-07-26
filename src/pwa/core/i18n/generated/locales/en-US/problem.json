@@ -1,10 +1,10 @@
 {
   "label": "The Problem",
   "title": "Why It Matters",
-  "1_title": "100+ DMs Daily",
-  "1_description": "Drowning in Instagram messages while trying to focus on your art",
-  "2_title": "Missed Bookings",
-  "2_description": "Lost clients because you couldn't reply fast enough",
-  "3_title": "Burnout Mode",
-  "3_description": "Answering the same pricing questions over and over"
+  "item_1_title": "100+ DMs Daily",
+  "item_1_description": "Drowning in Instagram messages while trying to focus on your art",
+  "item_2_title": "Missed Bookings",
+  "item_2_description": "Lost clients because you couldn't reply fast enough",
+  "item_3_title": "Burnout Mode",
+  "item_3_description": "Answering the same pricing questions over and over"
 }

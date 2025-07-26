@@ -1,4 +1,4 @@
-import { defaultNS } from "@/pwa/core/i18n/utils/config";
+// import { defaultNS } from "@/pwa/core/i18n/utils/config";
 
 import type { Resources } from "@/pwa/core/i18n/generated/types/resources";
 
