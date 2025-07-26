@@ -37,5 +37,39 @@
         "description": "how_it_works:item_4"
       }
     ]
+  },
+  "what_you_get": {
+    "items": [
+      {
+        "id": "1",
+        "title": "what_you_get:item_1_title",
+        "description": "what_you_get:item_1_description"
+      },
+      {
+        "id": "2",
+        "title": "what_you_get:item_2_title",
+        "description": "what_you_get:item_2_description"
+      },
+      {
+        "id": "3",
+        "title": "what_you_get:item_3_title",
+        "description": "what_you_get:item_3_description"
+      },
+      {
+        "id": "4",
+        "title": "what_you_get:item_4_title",
+        "description": "what_you_get:item_4_description"
+      },
+      {
+        "id": "5",
+        "title": "what_you_get:item_5_title",
+        "description": "what_you_get:item_5_description"
+      },
+      {
+        "id": "6",
+        "title": "what_you_get:item_6_title",
+        "description": "what_you_get:item_6_description"
+      }
+    ]
   }
 }

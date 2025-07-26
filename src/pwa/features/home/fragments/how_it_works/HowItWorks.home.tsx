@@ -4,6 +4,7 @@ import { useTranslation } from "@/pwa/core/i18n/hooks";
 import clsx from "clsx";
 import staticData from "@/pwa/features/home/data/static.json";
 import { CheckCircleIcon } from "lucide-react";
+import { Fragment } from "react";
 
 export const HowItWorksHome = () => {
   const { t } = useTranslation();
@@ -78,9 +79,8 @@ export const HowItWorksHome = () => {
               {setupItems.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <>
+                  <Fragment key={index}>
                     <div
-                      key={index}
                       className={clsx(
                         "grid grid-flow-col items-start content-start justify-start justify-items-start gap-[1rem]",
                         "w-full",
@@ -104,7 +104,7 @@ export const HowItWorksHome = () => {
                     {index < setupItems.length - 1 && (
                       <div className={clsx("w-full h-[1px]", "bg-[#F0ECF6]")} />
                     )}
-                  </>
+                  </Fragment>
                 );
               })}
             </div>
@@ -112,7 +112,7 @@ export const HowItWorksHome = () => {
         </div>
 
         {/* right */}
-        <img src={"/images/how_it_works/image.svg"} />
+        <img src={"/images/home/how_it_works/image.svg"} />
       </div>
     </section>
   );

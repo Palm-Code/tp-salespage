@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { HeroHome } from "../fragments/hero";
 import { ProblemHome } from "../fragments/problem";
 import { HowItWorksHome } from "../fragments/how_it_works";
+import { WhatYouGetHome } from "../fragments/what_you_get";
 
 export const HomeContainer = () => {
   return (
@@ -10,6 +11,7 @@ export const HomeContainer = () => {
       <HeroHome />
       <ProblemHome />
       <HowItWorksHome />
+      <WhatYouGetHome />
     </div>
   );
 };
