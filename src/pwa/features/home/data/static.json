@@ -1,0 +1,41 @@
+{
+  "problem": {
+    "items": [
+      {
+        "id": "1",
+        "title": "problem:1_title",
+        "description": "problem:1_description"
+      },
+      {
+        "id": "2",
+        "title": "problem:2_title",
+        "description": "problem:2_description"
+      },
+      {
+        "id": "3",
+        "title": "problem:3_title",
+        "description": "problem:3_description"
+      }
+    ]
+  },
+  "how_it_works": {
+    "items": [
+      {
+        "id": "1",
+        "description": "how_it_works:item_1"
+      },
+      {
+        "id": "2",
+        "description": "how_it_works:item_2"
+      },
+      {
+        "id": "3",
+        "description": "how_it_works:item_3"
+      },
+      {
+        "id": "4",
+        "description": "how_it_works:item_4"
+      }
+    ]
+  }
+}

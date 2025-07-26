@@ -17,6 +17,7 @@ export const HeroHome = () => {
       style={{
         backgroundImage: "url('/images/home/hero/bg.svg')",
         backdropFilter: "blur(20px)",
+        backgroundPosition: "center",
       }}
     >
       <div
@@ -33,8 +34,11 @@ export const HeroHome = () => {
             "grid grid-flow-col place-content-center place-items-center gap-[0.5rem]"
           )}
         >
-          {Array.from({ length: 5 }).map(() => (
-            <Star className={clsx("w-[1.5rem] h-[1.5rem]", "text-[#F8B306]")} />
+          {Array.from({ length: 5 }).map((_, index) => (
+            <Star
+              key={index}
+              className={clsx("w-[1.5rem] h-[1.5rem]", "text-[#F8B306]")}
+            />
           ))}
         </div>
 
