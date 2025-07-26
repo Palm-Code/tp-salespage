@@ -71,5 +71,41 @@
         "description": "what_you_get:item_6_description"
       }
     ]
+  },
+  "testimonial": {
+    "items": [
+      {
+        "id": "1",
+        "rating": 5,
+        "review": "'Tiny Parrot saved my sanity! I went from spending 3 hours daily on DMs to just checking in once. My bookings increased 40% in the first month.'",
+        "reviewer_name": "Mike Rodriguez",
+        "reviewer_job": "Traditional Tattoo Artist, Miami",
+        "reviewer_photo": ""
+      },
+      {
+        "id": "2",
+        "rating": 5,
+        "review": "'Game changer! No more lost clients because I couldn't reply fast enough. The AI even handles difficult questions better than I do sometimes 😂'",
+        "reviewer_name": "Sarah Chen",
+        "reviewer_job": "Fine Line Specialist, Portland",
+        "reviewer_photo": ""
+      },
+      {
+        "id": "3",
+        "rating": 5,
+        "review": "'I was skeptical at first, but Tiny Parrot sounds exactly like me. Clients don't even know they're talking to an AI. Best investment I've made for my shop.'",
+        "reviewer_name": "Danny Thompson",
+        "reviewer_job": "Realism Artist, Austin",
+        "reviewer_photo": ""
+      },
+      {
+        "id": "4",
+        "rating": 5,
+        "review": "'I was skeptical at first, but Tiny Parrot sounds exactly like me. Clients don't even know they're talking to an AI. Best investment I've made for my shop.'",
+        "reviewer_name": "James Miller",
+        "reviewer_job": "Traditional Tattoo Artist, Miami",
+        "reviewer_photo": ""
+      }
+    ]
   }
 }
