@@ -141,5 +141,29 @@
         "description": "plan_pricing:footer_item_3"
       }
     ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": "1",
+        "title": "faq:item_1_title",
+        "description": "faq:item_1_description"
+      },
+      {
+        "id": "2",
+        "title": "faq:item_2_title",
+        "description": "faq:item_2_description"
+      },
+      {
+        "id": "3",
+        "title": "faq:item_3_title",
+        "description": "faq:item_3_description"
+      },
+      {
+        "id": "4",
+        "title": "faq:item_4_title",
+        "description": "faq:item_4_description"
+      }
+    ]
   }
 }
