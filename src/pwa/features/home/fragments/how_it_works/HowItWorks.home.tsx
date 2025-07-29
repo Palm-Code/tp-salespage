@@ -33,14 +33,14 @@ export const HowItWorksHome = () => {
         {/* left */}
         <div
           className={clsx(
-            "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1rem]",
+            "grid grid-cols-1 items-start content-start justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[1rem]",
             "w-full"
           )}
         >
           <Badge>{t("how_it_works:label")}</Badge>
           <div
             className={clsx(
-              "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1rem]",
+              "grid grid-cols-1 items-start content-start justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[1rem]",
               "w-full"
             )}
           >
@@ -57,7 +57,9 @@ export const HowItWorksHome = () => {
               {t("how_it_works:title")}
             </h2>
             <span
-              className={clsx("text-[#4D4D4D] text-[0.75rem] sm:text-[1.125rem] font-normal")}
+              className={clsx(
+                "text-[#4D4D4D] text-center sm:text-left text-[0.75rem] sm:text-[1.125rem] font-normal"
+              )}
             >
               {t("how_it_works:description")}
             </span>
@@ -70,7 +72,11 @@ export const HowItWorksHome = () => {
               "w-full"
             )}
           >
-            <span className={clsx("text-[#1D1D1D] text-[1.125rem] sm:text-[1.25rem] font-bold")}>
+            <span
+              className={clsx(
+                "text-[#1D1D1D] text-[1.125rem] sm:text-[1.25rem] font-bold"
+              )}
+            >
               {t("how_it_works:title_items")}
             </span>
             <div

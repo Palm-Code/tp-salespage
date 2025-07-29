@@ -18,9 +18,9 @@ export const WhatYouGetCardHome = ({
   return (
     <div
       className={clsx(
-        "grid grid-flow-col place-content-start place-items-start gap-[1rem]",
+        "grid grid-flow-row grid-cols-1 sm:grid-cols-none sm:grid-flow-col place-content-start place-items-start gap-[1rem]",
         "w-full",
-        "px-[1.5rem] py-[1.5rem]",
+        "px-[1rem] py-[1.5rem] sm:px-[1.5rem] sm:py-[1.5rem]",
         "bg-[#FFFFFF80]",
         "rounded-[0.5rem]"
       )}
@@ -28,17 +28,17 @@ export const WhatYouGetCardHome = ({
         backdropFilter: "blur(4px)",
       }}
     >
-      {Icon && <Icon className={clsx("w-[2rem] h-[2rem]", "text-[#472E75]")} />}
+      {Icon && <Icon className={clsx("w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem]", "text-[#472E75]")} />}
       <div
         className={clsx(
           "grid grid-cols-1 place-content-start place-items-start gap-[0.5rem]",
           "w-full"
         )}
       >
-        <span className={clsx("text-[#1D1D1D] text-[1.125rem] font-bold")}>
+        <span className={clsx("text-[#1D1D1D] text-[0.875rem] sm:text-[1.125rem] font-bold")}>
           {title}
         </span>
-        <span className={clsx("text-[#1D1D1D] text-[1rem] font-normal")}>
+        <span className={clsx("text-[#1D1D1D] text-[0.75rem] sm:text-[1rem] font-normal")}>
           {description}
         </span>
       </div>
