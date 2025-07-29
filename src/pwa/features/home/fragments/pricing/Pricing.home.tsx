@@ -52,7 +52,7 @@ export const PricingHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[877px]",
+        "min-h-[622px] sm:min-h-[877px]",
         "px-[1.5rem] md:px-0"
       )}
       style={{

@@ -12,7 +12,7 @@ export const HeroHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[830px]",
+        "min-h-[529px] sm:min-h-[830px]",
         "px-[1.5rem] md:px-0"
       )}
       style={{

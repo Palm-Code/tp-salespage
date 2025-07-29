@@ -20,7 +20,7 @@ export const HowItWorksHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[761px]",
+        "min-h-[736px] sm:min-h-[761px]",
         "px-[1.5rem] md:px-0 py-[2rem]"
       )}
     >
