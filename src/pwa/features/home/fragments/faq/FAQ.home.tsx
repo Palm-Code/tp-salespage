@@ -18,7 +18,8 @@ export const FAQHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[1028px]"
+        "min-h-[1028px]",
+        "px-[1rem] sm:px-[0px]"
       )}
     >
       <div
@@ -35,7 +36,9 @@ export const FAQHome = () => {
         >
           <Badge>{t("faq:label")}</Badge>
           <h2
-            className={clsx("text-[2.5rem] font-bold")}
+            className={clsx(
+              "text-[1.25rem] sm:text-[2.5rem] text-center font-bold"
+            )}
             style={{
               background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
               WebkitBackgroundClip: "text",

@@ -22,7 +22,7 @@ export const FAQAccordionHome = ({
         "grid grid-cols-1 place-content-start place-items-start",
         isOpen ? "gap-[0.75rem]" : "gap-[0rem]",
         "w-full",
-        "px-[2rem] py-[2rem]",
+        "px-[1rem] py-[1.5rem] sm:px-[2rem] sm:py-[2rem]",
         "rounded-[0.5rem]",
         "bg-[#F0ECF64D]"
       )}
@@ -37,7 +37,7 @@ export const FAQAccordionHome = ({
         )}
         onClick={handleClickAccordionButton}
       >
-        <span className={clsx("text-[#37245B] text-[1.5rem] font-bold")}>
+        <span className={clsx("text-[#37245B] text-[0.875rem] sm:text-[1.5rem] font-bold")}>
           {question}
         </span>
         {isOpen ? (
@@ -53,7 +53,7 @@ export const FAQAccordionHome = ({
           opacity: isOpen ? 1 : 0,
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={clsx("text-[#1D1D1D] text-[1.25rem] font-normal")}
+        className={clsx("text-[#1D1D1D] text-[0.75rem] sm:text-[1.25rem] font-normal")}
       >
         {answer}
       </motion.div>
