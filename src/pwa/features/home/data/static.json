@@ -1,4 +1,13 @@
 {
+  "header": {
+    "logo": {
+      "src": "/images/home/header/logo.svg"
+    },
+    "cta": {
+      "label": "header:cta_trial",
+      "href": ""
+    }
+  },
   "problem": {
     "items": [
       {

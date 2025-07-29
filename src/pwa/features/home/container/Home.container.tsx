@@ -10,10 +10,12 @@ import { RiskFreeGuaranteeHome } from "../fragments/risk_free_guarantee";
 import { FAQHome } from "../fragments/faq";
 import { GetYourTimeBackHome } from "../fragments/get_your_time_back";
 import { FooterHome } from "../fragments/footer";
+import { HeaderHome } from "../fragments/header";
 
 export const HomeContainer = () => {
   return (
     <div className={clsx("w-full")}>
+      <HeaderHome />
       <HeroHome />
       <ProblemHome />
       <HowItWorksHome />
