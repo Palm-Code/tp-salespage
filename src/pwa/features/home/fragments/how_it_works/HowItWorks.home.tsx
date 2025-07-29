@@ -20,12 +20,13 @@ export const HowItWorksHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[761px]"
+        "min-h-[761px]",
+        "px-[1.5rem] md:px-0 py-[2rem]"
       )}
     >
       <div
         className={clsx(
-          "grid grid-cols-2 items-center content-center justify-center justify-items-center gap-[3rem]",
+          "grid grid-cols-1 md:grid-cols-2 items-center content-center justify-center justify-items-center gap-[3rem]",
           "max-w-[1200px] w-full"
         )}
       >
@@ -44,7 +45,9 @@ export const HowItWorksHome = () => {
             )}
           >
             <h2
-              className={clsx("text-[2.5rem] font-bold text-left")}
+              className={clsx(
+                "text-[1.25rem] text-center sm:text-left sm:text-[2.5rem] font-bold"
+              )}
               style={{
                 background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
                 WebkitBackgroundClip: "text",
@@ -54,7 +57,7 @@ export const HowItWorksHome = () => {
               {t("how_it_works:title")}
             </h2>
             <span
-              className={clsx("text-[#4D4D4D] text-[1.125rem] font-normal")}
+              className={clsx("text-[#4D4D4D] text-[0.75rem] sm:text-[1.125rem] font-normal")}
             >
               {t("how_it_works:description")}
             </span>
@@ -67,12 +70,12 @@ export const HowItWorksHome = () => {
               "w-full"
             )}
           >
-            <span className={clsx("text-[#1D1D1D] text-[1.25rem] font-bold")}>
+            <span className={clsx("text-[#1D1D1D] text-[1.125rem] sm:text-[1.25rem] font-bold")}>
               {t("how_it_works:title_items")}
             </span>
             <div
               className={clsx(
-                "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1.5rem]",
+                "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[1rem] sm:gap-[0.75.5rem]",
                 "w-full"
               )}
             >
@@ -84,18 +87,18 @@ export const HowItWorksHome = () => {
                       className={clsx(
                         "grid grid-flow-col items-start content-start justify-start justify-items-start gap-[1rem]",
                         "w-full",
-                        "px-[1rem] py-[1rem]"
+                        "px-[0rem] py-[0rem] sm:px-[1rem] sm:py-[1rem]"
                       )}
                     >
                       <Icon
                         className={clsx(
-                          "w-[1.5rem] h-[1.5rem]",
+                          "w-[1rem] h-[1rem] sm:w-[1.5rem] sm:h-[1.5rem]",
                           "text-[#67A981]"
                         )}
                       />
                       <span
                         className={clsx(
-                          "text-[#1D1D1D] text-[1.125rem] font-normal"
+                          "text-[#1D1D1D] text-[0.75rem] sm:text-[1.125rem] font-normal"
                         )}
                       >
                         {item.description}
