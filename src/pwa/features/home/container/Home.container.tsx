@@ -9,6 +9,7 @@ import { PricingHome } from "../fragments/pricing";
 import { RiskFreeGuaranteeHome } from "../fragments/risk_free_guarantee";
 import { FAQHome } from "../fragments/faq";
 import { GetYourTimeBackHome } from "../fragments/get_your_time_back";
+import { FooterHome } from "../fragments/footer";
 
 export const HomeContainer = () => {
   return (
@@ -22,6 +23,7 @@ export const HomeContainer = () => {
       <RiskFreeGuaranteeHome />
       <FAQHome />
       <GetYourTimeBackHome />
+      <FooterHome />
     </div>
   );
 };

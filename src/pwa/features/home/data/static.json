@@ -165,5 +165,28 @@
         "description": "faq:item_4_description"
       }
     ]
+  },
+  "footer": {
+    "logo": {
+      "src": "/images/home/footer/logo.svg"
+    },
+    "menu": {
+      "items": [
+        {
+          "id": "1",
+          "name": "footer:tnc",
+          "href": ""
+        },
+        {
+          "id": "2",
+          "name": "footer:privacy_policy",
+          "href": ""
+        }
+      ]
+    },
+    "cta": {
+      "label": "footer:cta",
+      "href": ""
+    }
   }
 }
