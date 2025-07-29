@@ -52,7 +52,8 @@ export const PricingHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[877px]"
+        "min-h-[877px]",
+        "px-[1.5rem] md:px-0"
       )}
       style={{
         backgroundImage: "url('/images/home/pricing/bg.svg')",
@@ -74,7 +75,7 @@ export const PricingHome = () => {
         >
           <Badge>{t("plan_pricing:label")}</Badge>
           <h2
-            className={clsx("text-[2.5rem] font-bold")}
+            className={clsx("text-[1.25rem] sm:text-[2.5rem] font-bold")}
             style={{
               background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
               WebkitBackgroundClip: "text",
@@ -83,7 +84,11 @@ export const PricingHome = () => {
           >
             {t("plan_pricing:title")}
           </h2>
-          <span className={clsx("text-[#4D4D4D] text-[1.125rem] font-normal")}>
+          <span
+            className={clsx(
+              "text-[#4D4D4D] text-center sm:text-left text-[0.75rem] sm:text-[1.125rem] font-normal"
+            )}
+          >
             {t("plan_pricing:description").replaceAll("'", ",")}
           </span>
         </div>
@@ -95,25 +100,25 @@ export const PricingHome = () => {
             "w-full max-w-[990px]",
             "border border-[#CFC4E3]",
             "rounded-[1rem]",
-            "px-[60px] py-[2rem]"
+            "px-[1rem] py-[1.5rem] sm:px-[60px] sm:py-[2rem]"
           )}
         >
           <div
             className={clsx(
-              "grid grid-cols-[486px_1fr] items-start content-start justify-start justify-items-start gap-[1rem]",
+              "grid grid-cols-1 md:grid-cols-[486px_1fr] items-start content-start justify-start justify-items-start gap-[1rem]",
               "w-full"
             )}
           >
             {/* left */}
             <div
               className={clsx(
-                "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[3rem]",
+                "grid grid-cols-1 items-start content-start justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[1.5rem] sm:gap-[3rem]",
                 "w-full"
               )}
             >
               <div
                 className={clsx(
-                  "grid grid-cols-1 items-start content-start justify-start justify-items-start gap-[0.5rem]",
+                  "grid grid-cols-1 items-start content-start justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[0.5rem]",
                   "w-full"
                 )}
               >
@@ -125,7 +130,7 @@ export const PricingHome = () => {
                     "border border-[#CFC4E3]",
                     "rounded-[1.5rem]",
                     "bg-[#FF0066]",
-                    "px-[1rem] py-[0.75rem]"
+                    "px-[1rem] py-[0.5rem] sm:px-[1rem] sm:py-[0.75rem]"
                   )}
                 >
                   <ZapIcon
@@ -133,7 +138,7 @@ export const PricingHome = () => {
                   />
                   <span
                     className={clsx(
-                      "text-[0.875rem] text-[white] font-semibold uppercase"
+                      "text-[0.625rem] sm:text-[0.875rem] text-[white] font-semibold uppercase"
                     )}
                   >
                     {t("plan_pricing:limited_time")}
@@ -141,13 +146,13 @@ export const PricingHome = () => {
                 </div>
 
                 {/* title */}
-                <span className={clsx("text-[#1D1D1D] text-[2rem] font-bold")}>
+                <span className={clsx("text-[#1D1D1D] text-[1.125rem] sm:text-[2rem] font-bold")}>
                   {t("plan_pricing:offer_title")}
                 </span>
 
                 {/* description */}
                 <span
-                  className={clsx("text-[#6441A5] text-[0.875rem] font-medium")}
+                  className={clsx("text-[#6441A5] text-[0.75rem] sm:text-[0.875rem] font-medium")}
                 >
                   {t("plan_pricing:offer_description")}
                 </span>
@@ -155,13 +160,13 @@ export const PricingHome = () => {
 
               <div
                 className={clsx(
-                  "grid grid-flow-col items-center content-center justify-start justify-items-start gap-[1.5rem]",
+                  "grid grid-flow-col items-center content-center justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[1.5rem]",
                   "w-full"
                 )}
               >
                 <span
                   className={clsx(
-                    "text-[#4D4D4D] text-[2rem] font-medium line-through"
+                    "text-[#4D4D4D] text-[1.125rem] sm:text-[2rem] font-medium line-through"
                   )}
                 >
                   {t("plan_pricing:original_price")}
@@ -173,13 +178,13 @@ export const PricingHome = () => {
                   )}
                 >
                   <span
-                    className={clsx("text-[#1D1D1D] text-[5rem] font-bold")}
+                    className={clsx("text-[#1D1D1D] text-[2.5rem] sm:text-[5rem] font-bold")}
                   >
                     {t("plan_pricing:discount_price")}
                   </span>
                   <span
                     className={clsx(
-                      "text-[#6A6A6A] text-[1.125rem] font-medium"
+                      "text-[#6A6A6A] text-[1rem] sm:text-[1.125rem] font-medium"
                     )}
                   >
                     {t("plan_pricing:per_month")}
@@ -191,8 +196,9 @@ export const PricingHome = () => {
             {/* right */}
             <div
               className={clsx(
-                "grid grid-cols-1 items-center content-center justify-start justify-items-start gap-[2rem]",
-                "w-full"
+                "grid grid-cols-2 sm:grid-cols-1 items-center content-cente justify-center justify-items-center sm:justify-start sm:justify-items-start gap-[1rem] sm:gap-[2rem]",
+                "w-full",
+                "px-[22px] sm:px-[0rem]"
               )}
             >
               {setupItems.map((item, index) => {
@@ -203,18 +209,18 @@ export const PricingHome = () => {
                       className={clsx(
                         "grid grid-flow-col items-start content-start justify-start justify-items-start gap-[1rem]",
                         "w-full",
-                        "px-[1rem] py-[1rem]"
+                        "px-[0rem] py-[0rem] sm:px-[1rem] sm:py-[1rem]"
                       )}
                     >
                       <Icon
                         className={clsx(
-                          "w-[1.5rem] h-[1.5rem]",
+                          "w-[1rem] h-[1rem] sm:w-[1.5rem] sm:h-[1.5rem]",
                           "text-[#67A981]"
                         )}
                       />
                       <span
                         className={clsx(
-                          "text-[#1D1D1D] text-[1.125rem] font-normal"
+                          "text-[#1D1D1D] text-[0.625rem] sm:text-[1.125rem] font-normal"
                         )}
                       >
                         {item.description}
@@ -241,7 +247,7 @@ export const PricingHome = () => {
                 "text-center",
                 "bg-[#2A1B45]",
                 "rounded-[0.5rem]",
-                "text-white text-[1rem] font-semibold"
+                "text-white text-[0.75rem] sm:text-[1rem] font-semibold"
               )}
             >
               {t("plan_pricing:cta")}
@@ -249,8 +255,8 @@ export const PricingHome = () => {
 
             <div
               className={clsx(
-                "grid grid-flow-col items-center content-center justify-center justify-items-center gap-[3rem]",
-                "w-full"
+                "flex items-center justify-center gap-[1.5rem] sm:gap-[3rem]",
+                "w-full max-w-[300px] sm:max-w-full"
               )}
             >
               {footerItems.map((item, index) => {
@@ -265,13 +271,13 @@ export const PricingHome = () => {
                   >
                     <Icon
                       className={clsx(
-                        "w-[1.5rem] h-[1.5rem]",
+                        "w-[1rem] h-[1rem] sm:w-[1.5rem] sm:h-[1.5rem]",
                         "text-[#472E75]"
                       )}
                     />
                     <span
                       className={clsx(
-                        "text-[#1D1D1D] text-[0.875rem] font-medium"
+                        "text-[#1D1D1D] text-[0.625rem] sm:text-[0.875rem] font-medium"
                       )}
                     >
                       {item.description}
