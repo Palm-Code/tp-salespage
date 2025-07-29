@@ -4,6 +4,7 @@ import "./globals.css";
 import clsx from "clsx";
 import { LanguageProvider } from "@/pwa/core/i18n/context/LanguageProvider";
 import { ReactQueryProvider } from "@/pwa/core/lib/react-query";
+import { AppContainer } from "@/pwa/core/modules/app/container";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -12,7 +13,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Tiny Parrot - Sales Page",
   description: "Tiny Parrot - Sales Page",
-  icons: "/logo/small.svg",
 };
 
 export const viewport: Viewport = {
@@ -36,14 +36,7 @@ export default function RootLayout({
               "w-full"
             )}
           >
-            <main
-              className={clsx(
-                "grid grid-cols-1 place-content-start place-items-start",
-                'w-full'
-              )}
-            >
-              {children}
-            </main>
+            <AppContainer>{children}</AppContainer>
           </body>
         </html>
       </ReactQueryProvider>

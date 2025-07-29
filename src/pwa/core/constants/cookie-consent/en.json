@@ -1,0 +1,40 @@
+{
+  "consentModal": {
+    "title": "We use cookies",
+    "description": "We use cookies to personalize content and ads, to provide social media features and to analyze traffic to our services. We also share information about your use of our Services with our social media, advertising and analytics partners. Our partners may combine this information with other data that you have provided to them or that they have collected as part of your use of the Services. Functional cookies are necessary. All other cookies are optional.",
+    "closeIconLabel": "",
+    "acceptAllBtn": "Accept all",
+    "acceptNecessaryBtn": "Reject all",
+    "showPreferencesBtn": "Individual preferences",
+    "footer": "<a href='https://palm-co.de/privacy-policy' target='_blank'>Privacy policy</a> <a href='https://palm-co.de/imprint' target='_blank'>Imprint</a> <a href='https://palm-co.de/terms-and-conditions' target='_blank'>Terms and Conditions</a>"
+  },
+  "preferencesModal": {
+    "title": "Consent Preferences Center",
+    "closeIconLabel": "Close modal",
+    "acceptAllBtn": "Accept all",
+    "acceptNecessaryBtn": "Reject all",
+    "savePreferencesBtn": "Save preferences",
+    "serviceCounterLabel": "Service|Services",
+    "sections": [
+      {
+        "title": "Cookie Usage",
+        "description": "Here you will find an overview of all cookies used. You can give your consent to entire categories or display further information and thus only select certain cookies."
+      },
+      {
+        "title": "Strictly Necessary Cookies <span class='pm__badge'>Always Enabled</span>",
+        "description": "Essential cookies enable basic functions and are necessary for the proper functioning of the website.",
+        "linkedCategory": "necessary"
+      },
+      {
+        "title": "Analytics Cookies",
+        "description": "Statistics cookies collect information anonymously. This information helps us to understand how our visitors use our website.",
+        "linkedCategory": "analytics"
+      },
+      {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used by us to provide you with advertising that may be relevant to your interests. These cookies enable, for example, the sharing of pages via social networks and the posting of comments. Offers that may match your interests are also displayed. You can change your personal settings for marketing cookies by clicking on the corresponding opt-out link.",
+        "linkedCategory": "marketing"
+      }
+    ]
+  }
+}
