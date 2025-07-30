@@ -18,8 +18,8 @@ export const FAQHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "h-full md:min-h-[1028px]",
-        "px-[1rem] xl:px-[0px] py-[2rem] md:py-[0px]"
+        "h-full",
+        "px-[1rem] xl:px-[0px] py-[2rem] md:py-[83px]"
       )}
     >
       <div
