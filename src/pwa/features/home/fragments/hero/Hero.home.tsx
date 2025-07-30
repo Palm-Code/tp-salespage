@@ -78,7 +78,7 @@ export const HeroHome = () => {
             "text-[#4D4D4D] text-[0.75rem] sm:text-[1.125rem] font-normal text-center"
           )}
         >
-          {t(staticData.hero.description)}
+          {t(staticData.hero.description).replaceAll("'", ",")}
         </p>
       </div>
 
