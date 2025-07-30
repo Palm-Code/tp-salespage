@@ -20,8 +20,8 @@ export const RiskFreeGuaranteeHome = () => {
           ? "url('/images/home/risk_free_guarantee/bg.svg')"
           : "url('/images/home/risk_free_guarantee/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundPosition: "bottom center",
+        backgroundSize: isMd?"cover":"100% 300px",
         backgroundRepeat: "no-repeat",
       }}
     >
