@@ -121,7 +121,7 @@ export const HowItWorksHome = () => {
         </div>
 
         {/* right */}
-        <img src={"/images/home/how_it_works/image.svg"} />
+        <img src={"/images/home/how_it_works/image.svg"} className={clsx('w-[294px] h-[294px] md:w-[656px] md:h-[595px]')} />
       </div>
     </section>
   );
