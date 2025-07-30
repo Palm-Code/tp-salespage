@@ -3,16 +3,19 @@ import clsx from "clsx";
 import staticData from "@/pwa/features/home/data/static.json";
 import Link from "next/link";
 import { useTranslation } from "@/pwa/core/i18n/hooks";
+import { useMediaQuery } from "usehooks-ts";
 
 export const FooterHome = () => {
   const { t } = useTranslation();
+  const isMd = useMediaQuery("(min-width: 768px)");
   return (
     <footer
       className={clsx(
         "flex flex-col md:flex-row items-center justify-center gap-[1.5rem]",
         "w-full",
-        "min-h-[320px] md:min-h-[100px]",
-        "px-[1rem] xl:px-[0px]"
+        "h-full md:min-h-[100px]",
+        "px-[1rem] xl:px-[0px] pt-[1.5rem] pb-[5rem] md:pt-[0px] md:pb-[0px]",
+        "border-t border-t-[#D8D8D8] md:border-t-0"
       )}
     >
       <div
@@ -22,7 +25,11 @@ export const FooterHome = () => {
         )}
       >
         <img
-          src={staticData.footer.logo.src}
+          src={
+            isMd
+              ? "/images/home/footer/logo.svg"
+              : "/images/home/footer/logo_mobile.svg"
+          }
           alt={"logo"}
           width={165}
           height={72}
