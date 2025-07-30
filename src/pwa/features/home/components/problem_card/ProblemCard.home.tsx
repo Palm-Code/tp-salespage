@@ -19,7 +19,7 @@ export const ProblemCardHome = ({
     <div
       className={clsx(
         "grid grid-flow-row grid-cols-1 sm:grid-cols-none sm:grid-flow-col place-content-start place-items-start gap-[1rem]",
-        "w-full",
+        "w-full h-full",
         "px-[1rem] py-[1.5rem] sm:px-[1.5rem] sm:py-[1.5rem]",
         "border border-[#CFC4E3]",
         "rounded-[0.5rem]"

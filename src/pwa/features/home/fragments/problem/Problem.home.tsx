@@ -49,14 +49,14 @@ export const ProblemHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[628px] sm:min-h-[458px]",
-        "px-[1.5rem] md:px-0 py-[2rem]"
+        "min-h-[628px] md:min-h-[458px]",
+        "px-[1.5rem] xl:px-0 py-[2rem]"
       )}
     >
       <div
         className={clsx(
           "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
-          "max-w-[1200px] w-full"
+          "max-w-5xl w-full"
         )}
       >
         <div
@@ -67,7 +67,7 @@ export const ProblemHome = () => {
         >
           <Badge>{t("problem:label")}</Badge>
           <h2
-            className={clsx("text-[1.25rem] sm:text-[2.5rem] font-bold")}
+            className={clsx("text-[1.25rem] md:text-[2.5rem] font-bold")}
             style={{
               background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
               WebkitBackgroundClip: "text",
@@ -80,7 +80,7 @@ export const ProblemHome = () => {
 
         <div
           className={clsx(
-            "grid grid-cols-1 md:grid-cols-3 place-content-center place-items-center gap-[1.5rem] sm:gap-[3rem]",
+            "grid grid-cols-1 lg:grid-cols-3 place-content-center place-items-center gap-[1.5rem] md:gap-[3rem]",
             "w-full"
           )}
         >
