@@ -3,7 +3,12 @@ import { Badge } from "@/pwa/core/components/badge";
 import { useTranslation } from "@/pwa/core/i18n/hooks";
 import clsx from "clsx";
 import staticData from "@/pwa/features/home/data/static.json";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
+import {
+  ForwardRefExoticComponent,
+  RefAttributes,
+  useRef,
+  useState,
+} from "react";
 import {
   CalendarDaysIcon,
   LayersIcon,
@@ -14,9 +19,14 @@ import {
   SpeechIcon,
 } from "lucide-react";
 import { WhatYouGetCardHome } from "../../components/what_you_get_card";
+import { Volume2, VolumeOff } from "lucide-react";
+import { useScroll, motion, useTransform } from "framer-motion";
 
 export const WhatYouGetHome = () => {
   const { t } = useTranslation();
+  const { scrollYProgress } = useScroll();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   const items = staticData.what_you_get.items.map((item) => {
     let icon:
@@ -59,6 +69,8 @@ export const WhatYouGetHome = () => {
       description: t(item.description),
     };
   });
+
+  console.log(scrollYProgress, "ini scroll y progress");
   return (
     <section
       className={clsx(
@@ -102,24 +114,59 @@ export const WhatYouGetHome = () => {
           </h2>
         </div>
         {/* video */}
+
         <video
-          className={clsx("w-full h-[528px]", "hidden md:block")}
+          ref={videoRef}
+          className={clsx(
+            "w-full h-[312px] md:h-[528px]",
+            "object-cover",
+            "rounded-[1.5rem]"
+          )}
           autoPlay
           loop
           playsInline
-          muted
-          src={"/videos/what_you_get/video.webm"}
-        />
-        <video
-          className={clsx("w-full h-[312px]", "block md:hidden")}
-          autoPlay
-          loop
-          playsInline
-          muted
-          src={
-            "https://res.cloudinary.com/drccyjwrq/video/upload/f_auto:video,q_50/v1/videos/Tiny_Parrot_Product_Demo_-_English_Portrait_ngka4y"
-          }
-        />
+          preload="auto"
+          muted={isMuted}
+        >
+          <source
+            src={
+              "https://res.cloudinary.com/drccyjwrq/video/upload/f_auto:video,q_50/v1/videos/Tiny_Parrot_Product_Demo_-_English_Portrait_ngka4y"
+            }
+            type="video/mp4"
+            media="(max-width: 768px)"
+          />
+          <source
+            src={"/videos/what_you_get/video.webm"}
+            type="video/mp4"
+            media="(min-width: 769px)"
+          />
+        </video>
+
+        <motion.div
+          style={{
+            opacity: useTransform(
+              scrollYProgress,
+              [0.18, 0.25, 0.3, 0.45],
+              [0, 1, 1, 0]
+            ),
+          }}
+          className={"fixed bottom-12 right-0 z-[45] container"}
+        >
+          <button
+            className={clsx(
+              "ml-auto",
+              "text-white backdrop-blur-[5px] p-[0.5rem] rounded-[0.5rem]"
+            )}
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(20, 6, 45, 0.70) 0%, rgba(74, 70, 83, 0.70) 100%)",
+              boxShadow: "0px 0px 10px 0px #C9ABFF",
+            }}
+            onClick={() => setIsMuted(!isMuted)}
+          >
+            {isMuted ? <VolumeOff /> : <Volume2 />}
+          </button>
+        </motion.div>
 
         {/* items */}
         <div
