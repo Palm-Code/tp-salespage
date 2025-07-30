@@ -13,6 +13,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Tiny Parrot - Sales Page",
   description: "Tiny Parrot - Sales Page",
+  icons: {
+    icon: "/favicon-3.png",
+  },
 };
 
 export const viewport: Viewport = {

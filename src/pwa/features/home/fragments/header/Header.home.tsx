@@ -13,7 +13,11 @@ export const HeaderHome = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
     };
+    const checkInitialScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", checkInitialScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
