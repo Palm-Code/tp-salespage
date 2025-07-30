@@ -88,7 +88,7 @@ export const WhatYouGetHome = () => {
     >
       <div
         className={clsx(
-          "grid grid-rows-1 grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
+          "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
           "w-full h-full",
           "px-[1.5rem] xl:px-0 py-[2rem]"
         )}
@@ -97,6 +97,7 @@ export const WhatYouGetHome = () => {
             ? "url('/images/home/what_you_get/bg.svg')"
             : "url('/images/home/what_you_get/bg_mobile.svg')",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div
