@@ -13,8 +13,8 @@ export const GetYourTimeBackHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[614px]",
-        "px-[1rem] xl:px-[0px]"
+        "h-full md:min-h-[614px]",
+        "px-[1rem] xl:px-[0px] py-[2rem] md:py-[0px]"
       )}
     >
       <div
