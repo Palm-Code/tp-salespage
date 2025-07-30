@@ -48,7 +48,8 @@ export const HeaderHome = () => {
             "px-[1rem] py-[0.5rem] sm:px-[1rem] sm:py-[1rem]",
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
-            "text-white text-[0.75rem] sm:text-[1rem] font-semibold"
+            "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+            "hover:brightness-150"
           )}
         >
           {t(staticData.header.cta.label)}

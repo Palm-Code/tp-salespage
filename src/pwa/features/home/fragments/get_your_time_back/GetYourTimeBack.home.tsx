@@ -73,13 +73,14 @@ export const GetYourTimeBackHome = () => {
         </span>
 
         <Link
-          href={"/app/tilte"}
+          href={"https://app.tiny-parrot.com/signin"}
           target="_blank"
           className={clsx(
             "px-[2rem] py-[0.75rem] sm:px-[1rem] sm:py-[1rem]",
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
-            "text-white text-[0.75rem] sm:text-[1rem] font-semibold"
+            "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+            "hover:brightness-150"
           )}
         >
           {t("get_your_time_back:cta")}

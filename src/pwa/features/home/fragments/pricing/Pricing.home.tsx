@@ -248,7 +248,7 @@ export const PricingHome = () => {
             )}
           >
             <Link
-              href={"/app/tilte"}
+              href={"https://app.tiny-parrot.com/signin"}
               target="_blank"
               className={clsx(
                 "px-[1rem] py-[1rem]",
@@ -256,7 +256,8 @@ export const PricingHome = () => {
                 "text-center",
                 "bg-[#2A1B45]",
                 "rounded-[0.5rem]",
-                "text-white text-[0.75rem] sm:text-[1rem] font-semibold"
+                "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+                "hover:brightness-150"
               )}
             >
               {t("plan_pricing:cta")}
