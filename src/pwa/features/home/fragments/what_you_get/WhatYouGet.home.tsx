@@ -102,7 +102,24 @@ export const WhatYouGetHome = () => {
           </h2>
         </div>
         {/* video */}
-        <video className={clsx("w-full h-[312px] md:h-[528px]")} />
+        <video
+          className={clsx("w-full h-[528px]", "hidden md:block")}
+          autoPlay
+          loop
+          playsInline
+          muted
+          src={"/videos/what_you_get/video.webm"}
+        />
+        <video
+          className={clsx("w-full h-[312px]", "block md:hidden")}
+          autoPlay
+          loop
+          playsInline
+          muted
+          src={
+            "https://res.cloudinary.com/drccyjwrq/video/upload/f_auto:video,q_50/v1/videos/Tiny_Parrot_Product_Demo_-_English_Portrait_ngka4y"
+          }
+        />
 
         {/* items */}
         <div
