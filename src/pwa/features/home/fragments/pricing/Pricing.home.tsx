@@ -106,7 +106,7 @@ export const PricingHome = () => {
         >
           <div
             className={clsx(
-              "grid grid-cols-1 md:grid-cols-[486px_1fr] items-start content-start justify-start justify-items-start gap-[1rem]",
+              "grid grid-cols-1 md:grid-cols-[486px_1fr] items-center content-center justify-start justify-items-start gap-[1rem]",
               "w-full"
             )}
           >
@@ -218,7 +218,7 @@ export const PricingHome = () => {
                       className={clsx(
                         "grid grid-flow-col items-start content-start justify-start justify-items-start gap-[1rem]",
                         "w-full",
-                        "px-[0rem] py-[0rem] sm:px-[1rem] sm:py-[1rem]"
+                        "px-[0rem] py-[0rem]"
                       )}
                     >
                       <Icon
