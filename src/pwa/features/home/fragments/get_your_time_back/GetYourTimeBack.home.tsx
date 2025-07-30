@@ -19,7 +19,7 @@ export const GetYourTimeBackHome = () => {
     >
       <div
         className={clsx(
-          "grid grid-cols-1 place-content-center place-items-center gap-[1.5rem]",
+          "grid grid-cols-1 place-content-center place-items-center gap-[3rem] md:gap-[1.5rem]",
           "w-full max-w-5xl h-[448px]",
           "rounded-[1rem]"
         )}
@@ -62,20 +62,27 @@ export const GetYourTimeBackHome = () => {
           </span>
         </div>
 
-        <h2
+        <div
           className={clsx(
-            "text-[white] text-[2rem] md:text-[60px] font-bold text-center"
+            "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1rem] md:gap-[1.5rem]",
+            'w-full'
           )}
         >
-          {t("get_your_time_back:title")}
-        </h2>
-        <span
-          className={clsx(
-            "text-[white] text-[0.75rem] md:text-[1.125rem] font-normal text-center"
-          )}
-        >
-          {t("get_your_time_back:description")}
-        </span>
+          <h2
+            className={clsx(
+              "text-[white] text-[2rem] md:text-[60px] font-bold text-center"
+            )}
+          >
+            {t("get_your_time_back:title")}
+          </h2>
+          <span
+            className={clsx(
+              "text-[white] text-[0.75rem] md:text-[1.125rem] font-normal text-center"
+            )}
+          >
+            {t("get_your_time_back:description")}
+          </span>
+        </div>
 
         <Link
           href={"https://app.tiny-parrot.com/signin"}
