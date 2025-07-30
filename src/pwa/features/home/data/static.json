@@ -8,6 +8,17 @@
       "href": ""
     }
   },
+  "hero": {
+    "review": {
+      "label": "hero:review"
+    },
+    "title": "hero:title",
+    "description": "hero:description",
+    "cta": {
+      "label": "hero:cta",
+      "href": "https://app.tiny-parrot.com/signin"
+    }
+  },
   "problem": {
     "items": [
       {

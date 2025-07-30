@@ -4,6 +4,7 @@ import * as React from "react";
 import clsx from "clsx";
 import { Star } from "lucide-react";
 import Link from "next/link";
+import staticData from "@/pwa/features/home/data/static.json";
 
 export const HeroHome = () => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ export const HeroHome = () => {
         backgroundImage: "url('/images/home/hero/bg.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div
@@ -38,13 +40,20 @@ export const HeroHome = () => {
           {Array.from({ length: 5 }).map((_, index) => (
             <Star
               key={index}
-              className={clsx("w-[0.75rem] h-[0.75rem] sm:w-[1.5rem] sm:h-[1.5rem]", "text-[#F8B306]")}
+              className={clsx(
+                "w-[0.75rem] h-[0.75rem] sm:w-[1.5rem] sm:h-[1.5rem]",
+                "text-[#F8B306]"
+              )}
             />
           ))}
         </div>
 
-        <span className={clsx("text-[#2A1B45] text-[0.625rem] sm:text-[1rem] font-semibold")}>
-          {t("hero:review")}
+        <span
+          className={clsx(
+            "text-[#2A1B45] text-[0.625rem] sm:text-[1rem] font-semibold"
+          )}
+        >
+          {t(staticData.hero.review.label)}
         </span>
       </div>
 
@@ -61,7 +70,7 @@ export const HeroHome = () => {
             "text-[#1D1D1D] text-[2rem] sm:text-[60px] font-bold text-center"
           )}
         >
-          {t("hero:title")}
+          {t(staticData.hero.title)}
         </h1>
         <p
           className={clsx(
@@ -69,21 +78,22 @@ export const HeroHome = () => {
             "text-[#4D4D4D] text-[0.75rem] sm:text-[1.125rem] font-normal text-center"
           )}
         >
-          {t("hero:description")}
+          {t(staticData.hero.description)}
         </p>
       </div>
 
       <Link
-        href={"/app/tilte"}
+        href={staticData.hero.cta.href}
         target="_blank"
         className={clsx(
           "px-[2rem] py-[0.75rem] sm:px-[1rem] sm:py-[1rem]",
           "bg-[#2A1B45]",
           "rounded-[0.5rem]",
-          "text-white text-[0.75rem] sm:text-[1rem] font-semibold"
+          "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+          "hover:brightness-150"
         )}
       >
-        {t("hero:cta")}
+        {t(staticData.hero.cta.label)}
       </Link>
     </section>
   );
