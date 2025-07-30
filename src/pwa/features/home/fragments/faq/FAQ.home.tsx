@@ -60,7 +60,7 @@ export const FAQHome = () => {
               <FAQAccordionHome
                 key={index}
                 question={item.title}
-                answer={item.description}
+                answer={item.description.replaceAll("'", ",")}
               />
             );
           })}
