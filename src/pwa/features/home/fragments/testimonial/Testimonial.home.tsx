@@ -34,13 +34,13 @@ export const TestimonialHome = () => {
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
         "min-h-[482px] md:min-h-[648px]",
-        "px-[1.5rem] xl:px-0 py-[2rem]"
+        "px-[1.5rem] testimonial:px-0 py-[2rem]"
       )}
     >
       <div
         className={clsx(
           "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
-          "max-w-5xl w-full"
+          "max-w-testimonial w-full"
         )}
       >
         <div
@@ -65,7 +65,7 @@ export const TestimonialHome = () => {
         </div>
 
         {/* items */}
-        <div className="relative max-w-5xl">
+        <div className="relative max-w-testimonial w-full">
           <button
             className={clsx(
               "absolute top-[50%] translate-y-[-50%] left-[-1.25rem] z-[10]",
