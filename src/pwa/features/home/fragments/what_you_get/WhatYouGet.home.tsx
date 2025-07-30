@@ -21,11 +21,9 @@ import {
 import { WhatYouGetCardHome } from "../../components/what_you_get_card";
 import { Volume2, VolumeOff } from "lucide-react";
 import { useScroll, motion, useTransform } from "framer-motion";
-import { useMediaQuery } from "usehooks-ts";
 
 export const WhatYouGetHome = () => {
   const { t } = useTranslation();
-  const isMd = useMediaQuery("(min-width: 768px)");
   const { scrollYProgress } = useScroll();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -78,8 +76,8 @@ export const WhatYouGetHome = () => {
         "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
         "w-full",
         "h-full",
-        "px-[1.5rem] xl:px-0 py-[2rem] md:py-[83px]",
-        "relative"
+        "relative",
+        "overflow-hidden"
       )}
       style={{
         background:
@@ -89,26 +87,26 @@ export const WhatYouGetHome = () => {
       }}
     >
       <div
-        className={clsx("absolute inset-0 z-[1]", "w-full h-full")}
+        className={clsx(
+          "absolute bottom-[216px] md:bottom-[-518px] z-[1]",
+          "w-[1166px] md:w-full h-full max-w-[1166px] max-h-[1166px] md:max-w-[1344px] md:max-h-[1344px]",
+          "rounded-full"
+        )}
         style={{
-          background: `
-        radial-gradient(ellipse 120% 80% at center bottom, rgba(240, 236, 246, 0.6) 0%, transparent 70%),
-        url(${
-          isMd
-            ? "'/images/home/what_you_get/bg.svg'"
-            : "'/images/home/what_you_get/bg_mobile.svg'"
-        })
-      `,
+          background:
+            "linear-gradient(181.45deg, rgba(222, 210, 248, 0.6) 1.12%, rgba(244, 238, 255, 0.6) 74.05%)",
           backgroundPosition: "center bottom, center",
           backgroundSize: "100% 100%, cover",
           backgroundRepeat: "no-repeat",
         }}
       />
+
       <div
         className={clsx(
           "relative z-[10]",
           "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
-          "max-w-5xl w-full h-full"
+          "max-w-5xl w-full h-full",
+          "px-[1.5rem] xl:px-0 py-[2rem] md:py-[83px]"
         )}
       >
         <div

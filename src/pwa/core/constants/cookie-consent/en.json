@@ -6,7 +6,7 @@
     "acceptAllBtn": "Accept all",
     "acceptNecessaryBtn": "Reject all",
     "showPreferencesBtn": "Individual preferences",
-    "footer": "<a href='https://palm-co.de/privacy-policy' target='_blank'>Privacy policy</a> <a href='https://palm-co.de/imprint' target='_blank'>Imprint</a> <a href='https://palm-co.de/terms-and-conditions' target='_blank'>Terms and Conditions</a>"
+    "footer": "<a href='https://app.tiny-parrot.com/privacy-policy' target='_blank'>Privacy policy</a> <a href='https://app.tiny-parrot.com/imprint' target='_blank'>Imprint</a> <a href='https://app.tiny-parrot.com/terms-and-conditions' target='_blank'>Terms and Conditions</a>"
   },
   "preferencesModal": {
     "title": "Consent Preferences Center",

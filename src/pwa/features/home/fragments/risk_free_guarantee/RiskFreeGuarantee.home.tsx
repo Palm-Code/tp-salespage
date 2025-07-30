@@ -21,12 +21,14 @@ export const RiskFreeGuaranteeHome = () => {
           : "url('/images/home/risk_free_guarantee/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div
         className={clsx(
           "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[2rem]",
-          "max-w-5xl w-full"
+          "max-w-5xl w-full h-full"
         )}
       >
         <ShieldHalf
@@ -35,6 +37,7 @@ export const RiskFreeGuaranteeHome = () => {
             "text-[#472E75]"
           )}
         />
+
         <div
           className={clsx(
             "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1rem]",
