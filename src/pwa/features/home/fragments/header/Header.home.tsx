@@ -21,7 +21,7 @@ export const HeaderHome = () => {
       className={clsx(
         "flex flex-row items-center justify-center gap-[1.5rem]",
         "w-full",
-        "min-h-[61px] sm:min-h-[90px]",
+        "min-h-[61px] md:min-h-[90px]",
         "px-[1rem] xl:px-[0px]",
         "fixed top-0 left-0 right-0 z-[999]",
         scrolled && "bg-white shadow-lg transition-all"
@@ -38,17 +38,17 @@ export const HeaderHome = () => {
           alt={"logo"}
           width={145}
           height={32}
-          className={clsx("w-[114px] h-[24px] sm:w-[145px] sm:h-[32px]")}
+          className={clsx("w-[114px] h-[24px] md:w-[145px] md:h-[32px]")}
         />
 
         <Link
           href={staticData.header.cta.href}
           target="_blank"
           className={clsx(
-            "px-[1rem] py-[0.5rem] sm:px-[1rem] sm:py-[1rem]",
+            "px-[1rem] py-[0.5rem] md:px-[1rem] md:py-[1rem]",
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
-            "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+            "text-white text-[0.75rem] md:text-[1rem] font-semibold",
             "hover:brightness-150"
           )}
         >
