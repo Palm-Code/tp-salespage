@@ -20,7 +20,7 @@ export const TestimonialCardHome = ({
     <div
       className={clsx(
         "grid grid-cols-1 grid-rows-1 grid-flow-row items-stretch content-start justify-start justify-items-start gap-[1rem]",
-        "min-w-[270px] sm:min-w-[324px] w-full min-h-[322px]",
+        "min-w-[270px] md:min-w-[324px] w-full min-h-[322px]",
         "px-[1rem] py-[1.5rem]",
         "border border-[#CFC4E3]",
         "rounded-[0.5rem]"
@@ -60,7 +60,7 @@ export const TestimonialCardHome = ({
         <img
           src={reviewerPhoto}
           alt={reviewerName}
-          className={clsx("w-[2.5rem] h-[2.5rem] sm:w-[50px] sm:h-[50px]", "rounded-full")}
+          className={clsx("w-[2.5rem] h-[2.5rem] md:w-[50px] md:h-[50px]", "rounded-full")}
           width={50}
           height={50}
         />
@@ -70,10 +70,10 @@ export const TestimonialCardHome = ({
             "w-full"
           )}
         >
-          <span className={clsx("text-[#1D1D1D] text-[0.875rem] sm:text-[1rem] font-semibold")}>
+          <span className={clsx("text-[#1D1D1D] text-[0.875rem] md:text-[1rem] font-semibold")}>
             {reviewerName}
           </span>
-          <span className={clsx("text-[#6A6A6A] text-[0.75rem] sm:text-[0.875rem] font-normal")}>
+          <span className={clsx("text-[#6A6A6A] text-[0.75rem] md:text-[0.875rem] font-normal")}>
             {reviewerJob}
           </span>
         </div>
