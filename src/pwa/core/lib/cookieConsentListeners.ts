@@ -34,9 +34,7 @@ const addCookieConsentListeners = () => {
   });
 
   window.addEventListener("cc:onChange", (event: Event) => {
-    const { changedCategories, changedServices } = (
-      event as CustomEvent<CCDetail>
-    )?.detail;
+    const { changedCategories } = (event as CustomEvent<CCDetail>)?.detail;
 
     // if (changedCategories.includes('analytics')) {
     //   if (acceptedCategory('analytics')) {
