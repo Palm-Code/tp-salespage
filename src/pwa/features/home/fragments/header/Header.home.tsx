@@ -22,7 +22,7 @@ export const HeaderHome = () => {
         "flex flex-row items-center justify-center gap-[1.5rem]",
         "w-full",
         "min-h-[61px] sm:min-h-[90px]",
-        "px-[1rem] sm:px-[0px]",
+        "px-[1rem] xl:px-[0px]",
         "fixed top-0 left-0 right-0 z-[999]",
         scrolled && "bg-white shadow-lg transition-all"
       )}
@@ -30,7 +30,7 @@ export const HeaderHome = () => {
       <div
         className={clsx(
           "flex flex-row items-center justify-between gap-[1.5rem]",
-          "w-full max-w-[1200px] h-full"
+          "w-full max-w-5xl h-full"
         )}
       >
         <img
