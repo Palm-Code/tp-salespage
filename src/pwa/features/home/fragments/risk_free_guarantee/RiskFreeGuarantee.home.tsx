@@ -2,9 +2,11 @@
 import { useTranslation } from "@/pwa/core/i18n/hooks";
 import clsx from "clsx";
 import { ShieldHalf } from "lucide-react";
+import { useMediaQuery } from "usehooks-ts";
 
 export const RiskFreeGuaranteeHome = () => {
   const { t } = useTranslation();
+  const isMd = useMediaQuery("(min-width: 768px)");
   return (
     <section
       className={clsx(
@@ -14,7 +16,9 @@ export const RiskFreeGuaranteeHome = () => {
         "px-[1rem] xl:px-[0px]"
       )}
       style={{
-        backgroundImage: "url('/images/home/risk_free_guarantee/bg.svg')",
+        backgroundImage: isMd
+          ? "url('/images/home/risk_free_guarantee/bg.svg')"
+          : "url('/images/home/risk_free_guarantee/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
         backgroundSize: "cover",

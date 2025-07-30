@@ -21,9 +21,11 @@ import {
 import { WhatYouGetCardHome } from "../../components/what_you_get_card";
 import { Volume2, VolumeOff } from "lucide-react";
 import { useScroll, motion, useTransform } from "framer-motion";
+import { useMediaQuery } from "usehooks-ts";
 
 export const WhatYouGetHome = () => {
   const { t } = useTranslation();
+  const isMd = useMediaQuery("(min-width: 768px)");
   const { scrollYProgress } = useScroll();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -70,7 +72,6 @@ export const WhatYouGetHome = () => {
     };
   });
 
-  console.log(scrollYProgress, "ini scroll y progress");
   return (
     <section
       className={clsx(
@@ -82,7 +83,9 @@ export const WhatYouGetHome = () => {
       style={{
         background:
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 236, 246, 0.8) 100%)",
-        backgroundImage: "url('/images/home/what_you_get/bg.svg')",
+        backgroundImage: isMd
+          ? "url('/images/home/what_you_get/bg.svg')"
+          : "url('/images/home/what_you_get/bg_mobile.svg')",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}

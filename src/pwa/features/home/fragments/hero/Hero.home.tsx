@@ -5,9 +5,11 @@ import clsx from "clsx";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import staticData from "@/pwa/features/home/data/static.json";
+import { useMediaQuery } from "usehooks-ts";
 
 export const HeroHome = () => {
   const { t } = useTranslation();
+  const isMd = useMediaQuery("(min-width: 768px)");
   return (
     <section
       className={clsx(
@@ -17,7 +19,9 @@ export const HeroHome = () => {
         "px-[1.5rem] md:px-0 pt-[5rem]"
       )}
       style={{
-        backgroundImage: "url('/images/home/hero/bg.svg')",
+        backgroundImage: isMd
+          ? "url('/images/home/hero/bg.svg')"
+          : "url('/images/home/hero/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
         backgroundSize: "cover",

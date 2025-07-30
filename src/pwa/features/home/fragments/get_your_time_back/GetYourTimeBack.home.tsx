@@ -3,9 +3,11 @@ import { useTranslation } from "@/pwa/core/i18n/hooks";
 import clsx from "clsx";
 import { Users } from "lucide-react";
 import Link from "next/link";
+import { useMediaQuery } from "usehooks-ts";
 
 export const GetYourTimeBackHome = () => {
   const { t } = useTranslation();
+  const isMd = useMediaQuery("(min-width: 768px)");
   return (
     <section
       className={clsx(
@@ -22,8 +24,11 @@ export const GetYourTimeBackHome = () => {
           "rounded-[1rem]"
         )}
         style={{
-          backgroundImage: "url('/images/home/get_your_time_back/bg.svg')",
+          backgroundImage: isMd
+            ? "url('/images/home/get_your_time_back/bg.svg')"
+            : "url('/images/home/get_your_time_back/bg_mobile.svg')",
           backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       >
         <div
