@@ -27,6 +27,22 @@ export const FooterHome = () => {
           width={165}
           height={72}
         />
+
+        <Link
+          href={staticData.footer.cta.href}
+          target="_blank"
+          className={clsx(
+            "px-[2rem] py-[0.75rem] md:px-[1rem] md:py-[1rem]",
+            "bg-[#2A1B45]",
+            "rounded-[0.5rem]",
+            "text-white text-[0.75rem] md:text-[1rem] font-semibold",
+            "hover:brightness-150",
+            "block md:hidden"
+          )}
+        >
+          {t("footer:cta")}
+        </Link>
+
         <div
           className={clsx(
             "flex flex-col md:flex-row items-center justify-center gap-[1rem] md:gap-[3rem]"
@@ -54,7 +70,8 @@ export const FooterHome = () => {
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
             "text-white text-[0.75rem] md:text-[1rem] font-semibold",
-            "hover:brightness-150"
+            "hover:brightness-150",
+            "hidden md:block"
           )}
         >
           {t("footer:cta")}
