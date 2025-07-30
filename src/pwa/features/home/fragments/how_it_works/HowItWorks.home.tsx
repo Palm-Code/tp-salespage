@@ -20,8 +20,8 @@ export const HowItWorksHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[736px] md:min-h-[761px]",
-        "px-[1.5rem] xl:px-0 py-[2rem]"
+        "h-full",
+        "px-[1.5rem] xl:px-0 py-[2rem] sm:py-[83px]"
       )}
     >
       <div
@@ -121,7 +121,10 @@ export const HowItWorksHome = () => {
         </div>
 
         {/* right */}
-        <img src={"/images/home/how_it_works/image.svg"} className={clsx('w-[294px] h-[294px] md:w-[656px] md:h-[595px]')} />
+        <img
+          src={"/images/home/how_it_works/image.svg"}
+          className={clsx("w-[294px] h-[294px] md:w-[656px] md:h-[595px]")}
+        />
       </div>
     </section>
   );

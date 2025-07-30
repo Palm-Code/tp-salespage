@@ -77,7 +77,9 @@ export const WhatYouGetHome = () => {
       className={clsx(
         "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[1346px] md:min-h-[1196px]"
+        "h-full",
+        "px-[1.5rem] xl:px-0 py-[2rem] md:py-[83px]",
+        "relative"
       )}
       style={{
         background:
@@ -87,116 +89,119 @@ export const WhatYouGetHome = () => {
       }}
     >
       <div
-        className={clsx(
-          "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
-          "w-full h-full",
-          "px-[1.5rem] xl:px-0 py-[2rem]"
-        )}
+        className={clsx("absolute inset-0 z-[1]", "w-full h-full")}
         style={{
-          backgroundImage: isMd
-            ? "url('/images/home/what_you_get/bg.svg')"
-            : "url('/images/home/what_you_get/bg_mobile.svg')",
-          backgroundPosition: "center",
+          background: `
+        radial-gradient(ellipse 120% 80% at center bottom, rgba(240, 236, 246, 0.6) 0%, transparent 70%),
+        url(${
+          isMd
+            ? "'/images/home/what_you_get/bg.svg'"
+            : "'/images/home/what_you_get/bg_mobile.svg'"
+        })
+      `,
+          backgroundPosition: "center bottom, center",
+          backgroundSize: "100% 100%, cover",
           backgroundRepeat: "no-repeat",
         }}
+      />
+      <div
+        className={clsx(
+          "relative z-[10]",
+          "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
+          "max-w-5xl w-full h-full"
+        )}
       >
         <div
           className={clsx(
-            "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[3rem]",
-            "max-w-5xl w-full h-full"
+            "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[0.5rem] md:gap-[1rem]",
+            "w-full"
           )}
         >
-          <div
+          <Badge>{t("what_you_get:label")}</Badge>
+          <h2
             className={clsx(
-              "grid grid-cols-1 items-start content-start justify-center justify-items-center gap-[0.5rem] md:gap-[1rem]",
-              "w-full"
+              "text-[1.25rem] md:text-[2.5rem] text-center md:text-left font-bold"
             )}
-          >
-            <Badge>{t("what_you_get:label")}</Badge>
-            <h2
-              className={clsx(
-                "text-[1.25rem] md:text-[2.5rem] text-center md:text-left font-bold"
-              )}
-              style={{
-                background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              {t(staticData.what_you_get.title)}
-            </h2>
-          </div>
-          {/* video */}
-
-          <video
-            ref={videoRef}
-            className={clsx(
-              "w-full h-[312px] md:h-[528px]",
-              "object-cover",
-              "rounded-[1.5rem]"
-            )}
-            autoPlay
-            loop
-            playsInline
-            preload="auto"
-            muted={isMuted}
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/drccyjwrq/video/upload/f_auto:video,q_50/v1/videos/Tiny_Parrot_Product_Demo_-_English_Portrait_ngka4y"
-              }
-              type="video/mp4"
-              media="(max-width: 768px)"
-            />
-            <source
-              src={"/videos/what_you_get/video.webm"}
-              type="video/mp4"
-              media="(min-width: 769px)"
-            />
-          </video>
-
-          <motion.div
             style={{
-              opacity: useTransform(
-                scrollYProgress,
-                [0.18, 0.25, 0.3, 0.45],
-                [0, 1, 1, 0]
-              ),
+              background: "linear-gradient(90deg, #3A099C 0%, #10012D 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
-            className={"fixed bottom-12 right-0 z-[45] container"}
           >
-            <button
-              className={clsx(
-                "ml-auto",
-                "text-white backdrop-blur-[5px] p-[0.5rem] rounded-[0.5rem]"
-              )}
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(20, 6, 45, 0.70) 0%, rgba(74, 70, 83, 0.70) 100%)",
-                boxShadow: "0px 0px 10px 0px #C9ABFF",
-              }}
-              onClick={() => setIsMuted(!isMuted)}
-            >
-              {isMuted ? <VolumeOff /> : <Volume2 />}
-            </button>
-          </motion.div>
+            {t(staticData.what_you_get.title)}
+          </h2>
+        </div>
+        {/* video */}
 
-          {/* items */}
-          <div
+        <video
+          ref={videoRef}
+          className={clsx(
+            "w-full h-[312px] md:h-[528px]",
+            "object-cover",
+            "rounded-[1.5rem]",
+            "relative z-[15]"
+          )}
+          autoPlay
+          loop
+          playsInline
+          preload="auto"
+          muted={isMuted}
+        >
+          <source
+            src={
+              "https://res.cloudinary.com/drccyjwrq/video/upload/f_auto:video,q_50/v1/videos/Tiny_Parrot_Product_Demo_-_English_Portrait_ngka4y"
+            }
+            type="video/mp4"
+            media="(max-width: 768px)"
+          />
+          <source
+            src={"/videos/what_you_get/video.webm"}
+            type="video/mp4"
+            media="(min-width: 769px)"
+          />
+        </video>
+
+        <motion.div
+          style={{
+            opacity: useTransform(
+              scrollYProgress,
+              [0.18, 0.25, 0.3, 0.45],
+              [0, 1, 1, 0]
+            ),
+          }}
+          className={"fixed bottom-12 right-0 z-[45] container"}
+        >
+          <button
             className={clsx(
-              "grid grid-cols-1 lg:grid-cols-3 place-content-center place-items-center gap-[3rem]",
-              "w-full"
+              "ml-auto",
+              "text-white backdrop-blur-[5px] p-[0.5rem] rounded-[0.5rem]"
             )}
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(20, 6, 45, 0.70) 0%, rgba(74, 70, 83, 0.70) 100%)",
+              boxShadow: "0px 0px 10px 0px #C9ABFF",
+            }}
+            onClick={() => setIsMuted(!isMuted)}
           >
-            {items.map((item, index) => (
-              <WhatYouGetCardHome
-                key={index}
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
-          </div>
+            {isMuted ? <VolumeOff /> : <Volume2 />}
+          </button>
+        </motion.div>
+
+        {/* items */}
+        <div
+          className={clsx(
+            "grid grid-cols-1 lg:grid-cols-3 place-content-center place-items-center gap-[3rem]",
+            "w-full"
+          )}
+        >
+          {items.map((item, index) => (
+            <WhatYouGetCardHome
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
     </section>

@@ -52,8 +52,8 @@ export const PricingHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[622px] md:min-h-[877px]",
-        "px-[1.5rem] xl:px-0"
+        "h-full",
+        "px-[1.5rem] xl:px-0 py-[83px] md:py-[2rem]"
       )}
       style={{
         backgroundImage: "url('/images/home/pricing/bg.svg')",

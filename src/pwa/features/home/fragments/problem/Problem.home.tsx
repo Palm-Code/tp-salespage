@@ -49,8 +49,8 @@ export const ProblemHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[628px] md:min-h-[458px]",
-        "px-[1.5rem] xl:px-0 py-[2rem]"
+        "h-full",
+        "px-[1.5rem] xl:px-0 py-[2rem] sm:py-[83px]"
       )}
     >
       <div

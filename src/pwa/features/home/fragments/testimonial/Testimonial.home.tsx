@@ -33,8 +33,8 @@ export const TestimonialHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
-        "min-h-[482px] md:min-h-[648px]",
-        "px-[1.5rem] testimonial:px-0 py-[2rem]"
+        "h-full",
+        "px-[1.5rem] testimonial:px-0 py-[2rem] md:py-[83px]"
       )}
     >
       <div

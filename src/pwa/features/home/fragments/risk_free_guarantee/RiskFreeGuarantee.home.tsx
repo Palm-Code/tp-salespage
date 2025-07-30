@@ -12,8 +12,8 @@ export const RiskFreeGuaranteeHome = () => {
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
-        "min-h-[260px] md:min-h-[440px]",
-        "px-[1rem] xl:px-[0px]"
+        "h-full",
+        "px-[1rem] xl:px-[0px] py-[83px] md:py-[2rem]"
       )}
       style={{
         backgroundImage: isMd
@@ -21,7 +21,6 @@ export const RiskFreeGuaranteeHome = () => {
           : "url('/images/home/risk_free_guarantee/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
-        backgroundSize: "cover",
       }}
     >
       <div
