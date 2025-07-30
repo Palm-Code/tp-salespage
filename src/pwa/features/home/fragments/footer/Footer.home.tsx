@@ -3,11 +3,10 @@ import clsx from "clsx";
 import staticData from "@/pwa/features/home/data/static.json";
 import Link from "next/link";
 import { useTranslation } from "@/pwa/core/i18n/hooks";
-import { useMediaQuery } from "usehooks-ts";
 
 export const FooterHome = () => {
   const { t } = useTranslation();
-  const isMd = useMediaQuery("(min-width: 768px)");
+
   return (
     <footer
       className={clsx(
@@ -25,11 +24,15 @@ export const FooterHome = () => {
         )}
       >
         <img
-          src={
-            isMd
-              ? "/images/home/footer/logo.svg"
-              : "/images/home/footer/logo_mobile.svg"
-          }
+          className={clsx("hidden md:block")}
+          src={"/images/home/footer/logo.svg"}
+          alt={"logo"}
+          width={165}
+          height={72}
+        />
+        <img
+          className={clsx("block md:hidden")}
+          src={"/images/home/footer/logo_mobile.svg"}
           alt={"logo"}
           width={165}
           height={72}

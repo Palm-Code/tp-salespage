@@ -1,27 +1,23 @@
 "use client";
 import { useTranslation } from "@/pwa/core/i18n/hooks";
-import * as React from "react";
 import clsx from "clsx";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import staticData from "@/pwa/features/home/data/static.json";
-import { useMediaQuery } from "usehooks-ts";
 
 export const HeroHome = () => {
   const { t } = useTranslation();
-  const isMd = useMediaQuery("(min-width: 768px)");
+
   return (
     <section
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
         "min-h-[529px] md:min-h-[830px]",
-        "px-[1.5rem] md:px-0 pt-[5rem]"
+        "px-[1.5rem] md:px-0 pt-[5rem]",
+        "bg-[url(/images/home/hero/bg_mobile.svg)] md:bg-[url(/images/home/hero/bg.svg)]"
       )}
       style={{
-        backgroundImage: isMd
-          ? "url('/images/home/hero/bg.svg')"
-          : "url('/images/home/hero/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
         backgroundSize: "cover",

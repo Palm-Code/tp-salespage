@@ -2,23 +2,20 @@
 import { useTranslation } from "@/pwa/core/i18n/hooks";
 import clsx from "clsx";
 import { ShieldHalf } from "lucide-react";
-import { useMediaQuery } from "usehooks-ts";
 
 export const RiskFreeGuaranteeHome = () => {
   const { t } = useTranslation();
-  const isMd = useMediaQuery("(min-width: 768px)");
+
   return (
     <section
       className={clsx(
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[1.5rem]",
         "w-full",
         "h-full",
-        "px-[1rem] xl:px-[0px] py-[83px] md:py-[2rem]"
+        "px-[1rem] xl:px-[0px] py-[83px] md:py-[2rem]",
+        "bg-[url(/images/home/risk_free_guarantee/bg_mobile.svg)] md:bg-[url(/images/home/risk_free_guarantee/bg.svg)]"
       )}
       style={{
-        backgroundImage: isMd
-          ? "url('/images/home/risk_free_guarantee/bg.svg')"
-          : "url('/images/home/risk_free_guarantee/bg_mobile.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "bottom center",
         backgroundSize: "cover",
