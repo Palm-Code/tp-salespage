@@ -265,7 +265,7 @@ export const PricingHome = () => {
 
             <div
               className={clsx(
-                "flex items-center justify-center gap-[1.5rem] sm:gap-[3rem]",
+                "flex flex-wrap items-center justify-center gap-[1.5rem] sm:gap-[3rem]",
                 "w-full max-w-[300px] sm:max-w-full"
               )}
             >
@@ -275,8 +275,7 @@ export const PricingHome = () => {
                   <div
                     key={index}
                     className={clsx(
-                      "grid grid-flow-col items-center content-center justify-center justify-items-center gap-[0.5rem]",
-                      "w-full"
+                      "grid grid-flow-col items-center content-center justify-center justify-items-center gap-[0.5rem]"
                     )}
                   >
                     <Icon
