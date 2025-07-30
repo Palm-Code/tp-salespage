@@ -196,12 +196,12 @@
         {
           "id": "1",
           "name": "footer:tnc",
-          "href": ""
+          "href": "https://app.tiny-parrot.com/terms-and-conditions"
         },
         {
           "id": "2",
           "name": "footer:privacy_policy",
-          "href": ""
+          "href": "https://app.tiny-parrot.com/privacy-policy"
         }
       ]
     },
