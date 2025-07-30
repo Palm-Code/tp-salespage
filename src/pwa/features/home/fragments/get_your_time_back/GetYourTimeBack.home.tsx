@@ -12,13 +12,13 @@ export const GetYourTimeBackHome = () => {
         "grid grid-cols-1 items-center content-center justify-center justify-items-center gap-[3rem]",
         "w-full",
         "min-h-[614px]",
-        "px-[1rem] sm:px-[0px]"
+        "px-[1rem] xl:px-[0px]"
       )}
     >
       <div
         className={clsx(
           "grid grid-cols-1 place-content-center place-items-center gap-[1.5rem]",
-          "w-full max-w-[1200px] h-[448px]",
+          "w-full max-w-5xl h-[448px]",
           "rounded-[1rem]"
         )}
         style={{
@@ -42,7 +42,7 @@ export const GetYourTimeBackHome = () => {
           >
             <Users
               className={clsx(
-                "w-[1rem] h-[1rem] sm:w-[1.5rem] sm:h-[1.5rem]",
+                "w-[1rem] h-[1rem] md:w-[1.5rem] md:h-[1.5rem]",
                 "text-[#472E75]"
               )}
             />
@@ -50,7 +50,7 @@ export const GetYourTimeBackHome = () => {
 
           <span
             className={clsx(
-              "text-[#2A1B45] text-[0.625rem] sm:text-[1rem] font-semibold"
+              "text-[#2A1B45] text-[0.625rem] md:text-[1rem] font-semibold"
             )}
           >
             {t("get_your_time_back:label")}
@@ -59,14 +59,14 @@ export const GetYourTimeBackHome = () => {
 
         <h2
           className={clsx(
-            "text-[white] text-[2rem] sm:text-[60px] font-bold text-center"
+            "text-[white] text-[2rem] md:text-[60px] font-bold text-center"
           )}
         >
           {t("get_your_time_back:title")}
         </h2>
         <span
           className={clsx(
-            "text-[white] text-[0.75rem] sm:text-[1.125rem] font-normal text-center"
+            "text-[white] text-[0.75rem] md:text-[1.125rem] font-normal text-center"
           )}
         >
           {t("get_your_time_back:description")}
@@ -76,10 +76,10 @@ export const GetYourTimeBackHome = () => {
           href={"https://app.tiny-parrot.com/signin"}
           target="_blank"
           className={clsx(
-            "px-[2rem] py-[0.75rem] sm:px-[1rem] sm:py-[1rem]",
+            "px-[2rem] py-[0.75rem] md:px-[1rem] md:py-[1rem]",
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
-            "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+            "text-white text-[0.75rem] md:text-[1rem] font-semibold",
             "hover:brightness-150"
           )}
         >

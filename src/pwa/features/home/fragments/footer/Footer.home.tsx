@@ -9,16 +9,16 @@ export const FooterHome = () => {
   return (
     <footer
       className={clsx(
-        "flex flex-col sm:flex-row items-center justify-center gap-[1.5rem]",
+        "flex flex-col md:flex-row items-center justify-center gap-[1.5rem]",
         "w-full",
-        "min-h-[320px] sm:min-h-[100px]",
-        "px-[1rem] sm:px-[0px]"
+        "min-h-[320px] md:min-h-[100px]",
+        "px-[1rem] xl:px-[0px]"
       )}
     >
       <div
         className={clsx(
-          "flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-[1.5rem]",
-          "w-full max-w-[1200px]"
+          "flex flex-col md:flex-row items-center justify-center md:justify-between gap-[1.5rem]",
+          "w-full max-w-5xl"
         )}
       >
         <img
@@ -29,7 +29,7 @@ export const FooterHome = () => {
         />
         <div
           className={clsx(
-            "flex flex-col sm:flex-row items-center justify-center gap-[1rem] sm:gap-[3rem]"
+            "flex flex-col md:flex-row items-center justify-center gap-[1rem] md:gap-[3rem]"
           )}
         >
           {staticData.footer.menu.items.map((item, index) => (
@@ -38,7 +38,7 @@ export const FooterHome = () => {
               href={item.href}
               target="_blank"
               className={clsx(
-                "text-[#303030] text-[0.75rem] sm:text-[1rem] font-normal sm:font-medium"
+                "text-[#303030] text-[0.75rem] md:text-[1rem] font-normal md:font-medium"
               )}
             >
               {t(item.name)}
@@ -50,10 +50,10 @@ export const FooterHome = () => {
           href={staticData.footer.cta.href}
           target="_blank"
           className={clsx(
-            "px-[2rem] py-[0.75rem] sm:px-[1rem] sm:py-[1rem]",
+            "px-[2rem] py-[0.75rem] md:px-[1rem] md:py-[1rem]",
             "bg-[#2A1B45]",
             "rounded-[0.5rem]",
-            "text-white text-[0.75rem] sm:text-[1rem] font-semibold",
+            "text-white text-[0.75rem] md:text-[1rem] font-semibold",
             "hover:brightness-150"
           )}
         >
