@@ -16,3 +16,24 @@ body {
   background: var(--background);
   font-family: "Inter", sans-serif;
 }
+
+#cc-main {
+  /** Change font **/
+  --cc-font-family: "Inter", Helvetica, Arial, sans-serif;
+
+  /** Change button primary color to black **/
+  --cc-btn-primary-bg: #472e75;
+  --cc-btn-secondary-bg: #472e75;
+  --cc-btn-primary-border-color: transparent;
+  --cc-btn-primary-hover-border-color: transparent;
+  --cc-btn-primary-hover-bg: #472e75;
+  --cc-btn-secondary-hover-bg: #472e75;
+  --cc-btn-secondary-color: #fff;
+  --cc-btn-secondary-hover-color: #fff;
+
+  /** Also make toggles the same color as the button **/
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+
+  /** Make the buttons a bit rounder **/
+  --cc-btn-border-radius: 10px;
+}
