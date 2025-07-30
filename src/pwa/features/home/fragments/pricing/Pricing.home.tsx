@@ -59,6 +59,7 @@ export const PricingHome = () => {
         backgroundImage: "url('/images/home/pricing/bg.svg')",
         backdropFilter: "blur(20px)",
         backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div
@@ -146,13 +147,19 @@ export const PricingHome = () => {
                 </div>
 
                 {/* title */}
-                <span className={clsx("text-[#1D1D1D] text-[1.125rem] sm:text-[2rem] font-bold")}>
+                <span
+                  className={clsx(
+                    "text-[#1D1D1D] text-[1.125rem] sm:text-[2rem] font-bold"
+                  )}
+                >
                   {t("plan_pricing:offer_title")}
                 </span>
 
                 {/* description */}
                 <span
-                  className={clsx("text-[#6441A5] text-[0.75rem] sm:text-[0.875rem] font-medium")}
+                  className={clsx(
+                    "text-[#6441A5] text-[0.75rem] sm:text-[0.875rem] font-medium"
+                  )}
                 >
                   {t("plan_pricing:offer_description")}
                 </span>
@@ -178,7 +185,9 @@ export const PricingHome = () => {
                   )}
                 >
                   <span
-                    className={clsx("text-[#1D1D1D] text-[2.5rem] sm:text-[5rem] font-bold")}
+                    className={clsx(
+                      "text-[#1D1D1D] text-[2.5rem] sm:text-[5rem] font-bold"
+                    )}
                   >
                     {t("plan_pricing:discount_price")}
                   </span>

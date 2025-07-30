@@ -59,6 +59,7 @@
     ]
   },
   "what_you_get": {
+    "title": "what_you_get:title",
     "items": [
       {
         "id": "1",

@@ -72,6 +72,7 @@ export const WhatYouGetHome = () => {
           "linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 236, 246, 0.8) 100%)",
         backgroundImage: "url('/images/home/what_you_get/bg.svg')",
         backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div
@@ -97,7 +98,7 @@ export const WhatYouGetHome = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            {t("what_you_get:title")}
+            {t(staticData.what_you_get.title)}
           </h2>
         </div>
         {/* video */}
