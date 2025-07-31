@@ -170,7 +170,8 @@ export const WhatYouGetHome = () => {
           className={"fixed bottom-12 right-0 z-[45] container"}
         >
           <button
-            className={clsx(
+           aria-label={"on-off-button"}
+           className={clsx(
               "ml-auto",
               "text-white backdrop-blur-[5px] p-[0.5rem] rounded-[0.5rem]"
             )}

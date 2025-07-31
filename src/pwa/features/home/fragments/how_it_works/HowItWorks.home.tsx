@@ -123,6 +123,7 @@ export const HowItWorksHome = () => {
         {/* right */}
         <img
           src={"/images/home/how_it_works/image.svg"}
+          alt={"tiny-parrot-preview-image"}
           className={clsx("w-[294px] h-[294px] md:w-[656px] md:h-[595px]")}
         />
       </div>

@@ -67,6 +67,7 @@ export const TestimonialHome = () => {
         {/* items */}
         <div className="relative max-w-testimonial w-full">
           <button
+            aria-label={"slide-left-testimonial-button"}
             className={clsx(
               "absolute top-[50%] translate-y-[-50%] left-[-1.25rem] z-[10]",
               "hidden md:flex items-center justify-center",
@@ -83,6 +84,7 @@ export const TestimonialHome = () => {
             />
           </button>
           <button
+            aria-label={"slide-right-testimonial-button"}
             className={clsx(
               "absolute top-[50%] translate-y-[-50%] right-[-1.25rem] z-[10]",
               "hidden md:flex items-center justify-center",

@@ -60,7 +60,11 @@ export const TestimonialCardHome = ({
         <img
           src={reviewerPhoto}
           alt={reviewerName}
-          className={clsx("w-[2.5rem] h-[2.5rem] md:w-[50px] md:h-[50px]", "rounded-full")}
+          loading="lazy"
+          className={clsx(
+            "w-[2.5rem] h-[2.5rem] md:w-[50px] md:h-[50px]",
+            "rounded-full"
+          )}
           width={50}
           height={50}
         />
@@ -70,10 +74,18 @@ export const TestimonialCardHome = ({
             "w-full"
           )}
         >
-          <span className={clsx("text-[#1D1D1D] text-[0.875rem] md:text-[1rem] font-semibold")}>
+          <span
+            className={clsx(
+              "text-[#1D1D1D] text-[0.875rem] md:text-[1rem] font-semibold"
+            )}
+          >
             {reviewerName}
           </span>
-          <span className={clsx("text-[#6A6A6A] text-[0.75rem] md:text-[0.875rem] font-normal")}>
+          <span
+            className={clsx(
+              "text-[#6A6A6A] text-[0.75rem] md:text-[0.875rem] font-normal"
+            )}
+          >
             {reviewerJob}
           </span>
         </div>
