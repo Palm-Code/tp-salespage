@@ -5,7 +5,7 @@
     },
     "cta": {
       "label": "header:cta_trial",
-      "href": "https://app.tiny-parrot.com/signin"
+      "href": "https://app.tiny-parrot.com/signup"
     }
   },
   "hero": {
@@ -16,7 +16,7 @@
     "description": "hero:description",
     "cta": {
       "label": "hero:cta",
-      "href": "https://app.tiny-parrot.com/signin"
+      "href": "https://app.tiny-parrot.com/signup"
     }
   },
   "problem": {
@@ -239,7 +239,7 @@
     },
     "cta": {
       "label": "footer:cta",
-      "href": "https://app.tiny-parrot.com/signin"
+      "href": "https://app.tiny-parrot.com/signup"
     }
   }
 }

@@ -248,7 +248,7 @@ export const PricingHome = () => {
             )}
           >
             <Link
-              href={"https://app.tiny-parrot.com/signin"}
+              href={"https://app.tiny-parrot.com/signup"}
               target="_blank"
               className={clsx(
                 "px-[1rem] py-[1rem]",

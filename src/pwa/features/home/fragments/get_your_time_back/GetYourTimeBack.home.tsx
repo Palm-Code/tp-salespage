@@ -82,7 +82,7 @@ export const GetYourTimeBackHome = () => {
         </div>
 
         <Link
-          href={"https://app.tiny-parrot.com/signin"}
+          href={"https://app.tiny-parrot.com/signup"}
           target="_blank"
           className={clsx(
             "px-[2rem] py-[0.75rem] md:px-[1rem] md:py-[1rem]",
